@@ -1,0 +1,37 @@
+<br>
+<div class="btn btn-outline btn-xl page-scroll" style="margin-left: 440px;"><b><h2>{{currentGroup}}</h2></b></div>
+<br>
+<br>
+
+   
+    <nvd3 options="options" data="data"></nvd3>
+
+
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Author</th>
+<th class="text-left">Category</th>
+<th class="text-left">Amount</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr ng-repeat="expense in userinfo | orderBy:'category'">
+<td class="text-left">{{expense.author}}</td>
+<td class="text-left">{{expense.category}}</td>
+<td class="text-left">{{expense.amount}}</td>
+</tr>
+<tr>
+<td class="text-left"></td>
+<td class="text-left">Total Expense</td>
+<td class="text-left">{{sum}}</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
